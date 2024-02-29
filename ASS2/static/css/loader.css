@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#preloader{
+    background: #000 url(../pics/loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#homepage-offer{
+    background-image: url(../pics/background3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}     
+
+.slide-right p{
+        animation: 2s slide-right;
+        animation-delay: 2s;
+     }
+
+.slide-right h4{
+        animation: 3s slide-right;
+        animation-delay: 3s;
+}
+     
+     @keyframes slide-right {
+         from {
+            margin-left: -500px;
+         }
+     
+         to {
+            margin-left: 0%;
+         }
+      }

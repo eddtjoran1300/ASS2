@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - TexTiT</title>
+    <link rel="stylesheet" href="../static/css/signup.css">
+    <link rel="stylesheet" href="../static/css/loader.css">
+</head>
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div id="preloader"></div>
+    <div class="banner">
+        <div class="navbar" style="text-align:right; position: sticky;">
+              <ul>
+             <li><a href="../templates/index.html">Home</a></li>
+             <li><a href="../templates/signup.html">Tools</a></li>
+             <li><a href="../templates/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <img src="../static/pics/fb.png">
+            <img src="../static/pics/tw.png">
+            <img src="../static/pics/google3.png">
+        </div>
+        <form action="/login", method="post" id="login" class="input-group">
+            <!-- <b class="text-center text-success">{{message}}</b> -->
+            <input type="text" name="email" class="input-field" placeholder="Email Address" required>
+            <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box" id=""><span> Remember Password</span>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <br>
+        <form action="/register", method="post" id="register" class="input-group">
+            <input type="text" class="input-field" name="firstname" placeholder="First Name" required>
+            <input type="text" class="input-field" name="secondname" placeholder="Second Name" required>  
+            <input type="email" class="input-field" name="email" placeholder="Email Address" required>
+            <input type="number" class="input-field" name="phone" placeholder="Phone Number" required>
+            <input type="password" class="input-field" name="password1" placeholder="Enter Password" required>
+            <input type="password" class="input-field" name="password2" placeholder="Confirm Password" required>
+            <input type="checkbox" class="chech-box" id=""><span style="font-size: 13px;"> By signing up,you agree to TexTiT's <a href=""
+                class="pb-3" style="text-decoration: none; font-size: 13px;" target="">Terms of use,Privacy Policy Policy</a></span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <br> <br> <br>
+    </div>
+    
+   
+</div>
+
+    <div class="footer">
+        
+        
+    </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register")
+        var z = document.getElementById("btn")
+  
+       function register(){
+          x.style.left ="-400px";
+          y.style.left ="50px";
+          z.style.left ="110px";
+      }
+  
+       function login(){
+          x.style.left ="50px";
+          y.style.left ="450px";
+          z.style.left ="0px";
+      }
+      </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>

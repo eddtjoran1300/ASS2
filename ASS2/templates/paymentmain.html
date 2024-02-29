@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Payment - TexTiT</title>
+    <link rel="stylesheet" href="../static/css/payment.css">
+    <link rel="stylesheet" href="../static/css/loader.css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="container">
+            <div class="col-1">
+                 <img src="../static/pics/textit.png" class="logo">
+                  <ul>
+                     <li><img src="../static/pics/star.png"> World's Best Audio Converter Software</li>
+                     <li><img src="../static/pics/star.png"> Subscribe to the best subscription plans</li>
+                     <li><img src="../static/pics/star.png"> Unlimited Subscriptions just for you</li>
+                  </ul>
+            </div>
+            <div class="col-2">
+                <h2><img src="../static/pics/star.png">Our Plans</h2>
+                
+                <form action="/mpesa" method="post">
+                        <label for="paid">
+                            <input type="radio" name="amount1" id="paid">
+                            <span>KSH 250 <small>/month</small> </span>  SILVER PLAN
+                        </label>
+
+                        <label for="paid">
+                            <input type="radio" name="amount1" id="paid">
+                            <span>KSH 300 <small>/month</small> </span>  GOLD PLAN
+                        </label>
+
+                        <label for="paid">
+                            <input type="radio" name="amount1" id="paid">
+                            <span>KSH 350 <small>/month</small> </span>  PLATINUM PLAN
+                        </label>
+
+                        <br>
+                        <!-- <p>Username</p> -->
+                        <!-- <input type="text" name="username" placeholder="Username"> -->
+                        <p>Phone Number</p>
+                        <input type="tel" name="phone" placeholder="Phone number 2547XXXXXXX" required>
+                        <p>Amount</p>
+                        <input type="number" name="amount" placeholder="Amount" style="width: 100%; background: transparent; padding: 7px 10px; outline: none; border: 1px solid #333; border-radius: 100px; margin: 12px 0; height: 50px; font-size: 18px;" required>
+                        <center> <button type="submit">Subscribe</button></center>
+                    
+                </form>
+                  <p class="backhome"><a href="../templates/index.html">Back Home</a></p>
+            </div>
+    </div>
+    <!-- scrippptttt loader -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+    <!-- end of scrrrrrippppt loader -->
+</body>
+</html>

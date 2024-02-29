@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Payment - TexTiT</title>
+    <link rel="stylesheet" href="../static/css/payment.css">
+    <link rel="stylesheet" href="../static/css/loader.css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="container">
+            <div class="col-1">
+                 <img src="../static/pics/textit.png" class="logo">
+                  <ul>
+                     <li><img src="../static/pics/star.png"> World's Best Audio Converter Software</li>
+                     <li><img src="../static/pics/star.png"> Subscribe to the best subscription plans</li>
+                     <li><img src="../static/pics/star.png"> Unlimited Subscriptions just for you</li>
+                  </ul>
+            </div>
+            <div class="col-2">
+                <h2><img src="../static/pics/star.png">Special Offer</h2>
+                
+                <form action="/mpesa" method="post">
+                        <!-- <label for="free"> -->
+                                <!-- <input type="radio" name="plans" id="free"> -->
+                                <!-- <span>FREE TRIAL</span> ONE MONTH -->
+                        <!-- </label> -->
+
+                        <label for="paid">
+                            <input type="radio" name="plans" id="paid">
+                            <span>KSH 200 <small>/month</small> </span>  NO LIMITS
+                        </label>
+
+                        <br>
+                        <p>Username</p>
+                        <input type="text" style="text-align: center;" placeholder="Username">
+                        <p>Phone Number</p>
+                        <input type="tel" style="text-align: center;" placeholder="2547XXXXXXX">
+                        <center> <button type="submit">Subscribe</button></center>
+
+                        <a href="../templates/index.html" style="margin-top: 70px;margin-left: 160px;">Back Home</a>
+                    
+                </form>
+            </div>           
+    </div>
+    <!-- scripppppptttt -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+    <!-- end of scrippppt -->
+</body>
+</html>
